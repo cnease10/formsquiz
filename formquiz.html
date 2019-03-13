@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Quiz</title>
+</head>
+
+<body>
+
+<h1>Register</h1>
+
+<form>
+	<div>
+<label>
+	First Name:
+	<input type="text" placeholder="John" required>
+</label>
+<label>
+	Last Name:
+	<input type="text" placeholder ="Smith" required>
+</label>
+	</div>
+
+	<div>
+<label for="male">Male</label>
+<input type="radio" id="male"  name="genderChoice" value="MALE">
+
+<label for="female">Female</label>
+<input type="radio" name="genderChoice" id="female"	value="FEMALE">
+
+<label for="other">Other</label>
+<input type="raido" id="other" name="genderChoice" value="Other">
+</div>
+
+<div>
+	<label>
+		Email:
+		<input type="text" placeholder="johnsmith@gmail.com" required pattern>
+	</label>
+	<label>
+		Password:
+		<input type="text" placeholder="password">
+	</label>
+</div>
+
+<div>
+	<label>
+		Birthday:
+		<select name="Month">
+			<option> January</option>
+			<option> February</option>
+			<option> March</option>
+			
+		</select>
+
+		<select name="Day">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			
+		</select>
+
+		<select name="Year">
+			<option>2000</option>
+			<option>1999</option>
+			<option>1998</option>
+		</select>
+	</label>
+</div>
+
+	<div>
+		<label for="agreeToConditions">I agree to the terms and conditions</label> 
+		<input type="checkbox" id="agreeToConditions" name="agree" value="conditions">
+	</div>
+
+	<button>Submit</button>
+</form>
+
+
+</body>
+</html>
